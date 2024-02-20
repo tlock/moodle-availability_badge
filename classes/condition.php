@@ -120,10 +120,16 @@ class condition extends \core_availability\condition {
     }
 
     public function update_after_restore($restoreid, $courseid, \base_logger $logger, $name) {
-        global $DB;
+        global $CFG, $DB;
         if (!$this->badgeid) {
             return false;
         }
+
+        require_once($CFG->libdir . '/badgeslib.php');
+        if ($DB->record_exists('badge', ['id' => $this->badgeid, 'type' => BADGE_TYPE_SITE])) {
+            return true;
+        }
+
         $rec = \restore_dbops::get_backup_ids_record($restoreid, 'badge', $this->badgeid);
         if (!$rec || !$rec->newitemid) {
             // If we are on the same course (e.g. duplicate) then we can just

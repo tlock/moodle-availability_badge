@@ -1,0 +1,11 @@
+.availability_badge input[name=id] {
+    padding-right: 1.5em;
+}
+
+.availability_badge input[name=id]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+.availability_badge .form-autocomplete-downarrow {
+    pointer-events: none;
+}

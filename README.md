@@ -6,8 +6,10 @@
 
 Developed for [University Of Canberra](http://www.canberra.edu.au)
 
+Updates by [University of New England](https://www.une.edu.au)
+
 Tim Lock
 
-Senior Software Engineer
+Architect Technical Consultant
 
-[Blackboard Inc.](http://blackboard.com)
+[Open LMS](http://openlms.net)

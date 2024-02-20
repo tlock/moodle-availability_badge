@@ -28,5 +28,5 @@ $string['missing'] = '(Missing badge)';
 $string['description'] = 'Allow only students who has a specified badge.';
 $string['requires_badge'] = 'You have badge \'<strong>{$a}</strong>\'';
 $string['requires_notbadge'] = 'You do not have badge \'<strong>{$a}</strong>\'';
+$string['privacy:metadata'] = 'The Restriction by badge plugin does not store any personal data.';
 $string['error_selectbadge'] = 'Error selecting badge';
-
