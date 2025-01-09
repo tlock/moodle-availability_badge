@@ -34,6 +34,19 @@ use availability_badge\condition;
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class availability_badge_condition_testcase extends advanced_testcase {
+
+    /** @var \stdClass course record. */
+    private $course;
+
+    /** @var \stdClass The details of the test activity module. */
+    private $module;
+
+    /** @var int ID of badge. */
+    private $badgeid;
+
+    /** @var \stdClass a test user. */
+    private $user;
+
     /**
      * Load required classes.
      */
